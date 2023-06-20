@@ -29,12 +29,12 @@ public class MovieSession {
 
 
     @JoinColumn(name = "movie_id")
-    @ManyToOne(cascade = CascadeType.ALL, fetch = FetchType.EAGER)
+    @ManyToOne(fetch = FetchType.EAGER)
     private Movie movie;
 
 
     @JoinColumn(name = "saloon_id")
-    @ManyToOne(cascade = CascadeType.PERSIST, fetch = FetchType.EAGER)
+    @ManyToOne(fetch = FetchType.EAGER)
     private Saloon saloon;
 
     @JsonIgnore

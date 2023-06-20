@@ -24,6 +24,6 @@ public class Seat {
     @Enumerated(value = EnumType.STRING)
     private SeatStatus seatStatus;
 
-    @ManyToOne(cascade = CascadeType.PERSIST, fetch = FetchType.LAZY)
+    @ManyToOne(fetch = FetchType.LAZY)
     private MovieSession movieSession;
 }

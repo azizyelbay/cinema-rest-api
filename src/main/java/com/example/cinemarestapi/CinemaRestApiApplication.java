@@ -14,6 +14,5 @@ public class CinemaRestApiApplication implements CommandLineRunner {
 	@Override
 	public void run(String... args) throws Exception {
 		System.out.println("baslatilirken calisir.");
-
 	}
 }
